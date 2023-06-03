@@ -1,6 +1,7 @@
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -372,12 +373,12 @@ local servers = {
   pyright = {},
   rust_analyzer = {
     ["rust-analyzer"] = {
-      diagnostics = {
-        enable = true,
-        disabled = {"unresolved-proc-macro"},
-        enableExperimental = true,
-      },
-    },
+          diagnostics = {
+              enable = true,
+              disabled = {"unresolved-proc-macro"},
+              enableExperimental = true,
+          },
+        },
   },
   tsserver = {},
 
